@@ -9,3 +9,6 @@ Edge does support CSS Grid, but it doesn't yet support display:contents.
 
 ## One grid per row
 Because of the limitations that occur in IE and Edge, it's neccessary to create a new grid for every row.
+
+## Responsive
+Both CSS Grid and Flexbox are perfectly responsive. In this grid, all div's will be placed below each other on everything smaller than a tablet (768px) and everything larger than that will have more or less of the same grid layout.
