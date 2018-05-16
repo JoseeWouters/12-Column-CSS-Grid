@@ -1,0 +1,107 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    padding: 15px;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        width: 100%;
+        max-width: 1170px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    .one {
+        grid-column: auto / span 1;
+    }
+    .two {
+        grid-column: auto / span 2;
+    }
+    .three {
+        grid-column: auto / span 3;
+    }
+    .four {
+        grid-column: auto / span 4;
+    }
+    .five {
+        grid-column: auto / span 5;
+    }
+    .six {
+        grid-column: auto / span 6;
+    }
+    .seven {
+        grid-column: auto / span 7;
+    }
+    .eight {
+        grid-column: auto / span 8;
+    }
+    .nine {
+        grid-column: auto / span 9;
+    }
+    .ten {
+        grid-column: auto / span 10;
+    }
+    .eleven {
+        grid-column: auto / span 11;
+    }
+    .twelve {
+        grid-column: auto / span 12;
+    }
+    .centered {
+        grid-column: 2 / span 10;
+    }
+}
+/* Fallback for IE 11, with Flexbox) */
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .grid > div {
+        margin: 15px;
+    }
+    .one {
+        flex-grow: 1;
+    }
+    .two {
+        flex-grow: 2;
+    }
+    .three {
+        flex-grow: 3;
+    }
+    .four {
+        flex-grow: 4;
+    }
+    .five {
+        flex-grow: 5;
+    }
+    .six {
+        flex-grow: 6;
+    }
+    .seven {
+        flex-grow: 7;
+    }
+    .eight {
+        flex-grow: 8;
+    }
+    .nine {
+        flex-grow: 9;
+    }
+    .ten {
+        flex-grow: 11;
+    }
+    .eleven {
+        flex-grow: 10;
+    }
+    .twelve {
+        flex-grow: 12;
+    }
+    .centered {
+        flex-grow: inherit;
+        width: 945px;
+        margin: 0 auto;
+    }
+}
